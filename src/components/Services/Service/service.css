@@ -1,0 +1,5 @@
+.card-container:hover{
+    box-shadow: 2px 2px 2px 2px gray;
+    transform: scale(90%);
+    transition-duration: 10000s ease-in;
+}

@@ -1,0 +1,38 @@
+[
+    {
+      "id": "625bb002f6c72853c122a385",
+      "price": "$120",
+      "picture": "https://i.postimg.cc/fWpHfR0M/service1-png.jpg",
+      "duration" : "30 days"
+    },
+    {
+      "id": "625bb002ddbafba98ab666c4",
+      "price": "$345",
+      "picture": "https://i.postimg.cc/3JPmqyKx/service2-png.jpg",
+      "duration" : "50 days"
+    },
+    {
+      "id": "625bb0029ec1fd02b672e510",
+      "price": "$453",
+      "picture": "https://i.postimg.cc/hjy71vyg/service3-png.jpg",
+      "duration" : "80 days"
+    },
+    {
+      "id": "625bb002c3fcf08dd2cadda1",
+      "price": "$554",
+      "picture": "https://i.postimg.cc/Prc9FMpv/service4-png.jpg",
+      "duration" : "100 days"
+    },
+    {
+      "id": "625bb002a3213f6018802f1a",
+      "price": "$689",
+      "picture": "https://i.postimg.cc/pTGq52K5/service5-png.jpg",
+      "duration" : "120 days"
+    },
+    {
+      "id": "625bb002d2230186ef181fde",
+      "price": "$897",
+      "picture": "https://i.postimg.cc/8zR4BdhS/service6-png.jpg",
+      "duration" : "180 days"
+    }
+  ]
