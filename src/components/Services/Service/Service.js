@@ -4,12 +4,14 @@ import { Button, Card } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import './service.css';
 
+
+
 const Service = (props) => {
     const navigate = useNavigate();
     const details = ()=>{
         navigate(`/${id}`)
     }
-    const{picture,duration,price,id}=props.service;
+    const{picture,duration,price,id,description}=props.service;
     return (
         <div>
             <Card className='card-container'>
@@ -17,7 +19,9 @@ const Service = (props) => {
                 <Card.Body>
                     <Card.Title>{duration}</Card.Title>
                     <Card.Text>
-                      <h3>Price is : {price}</h3>
+                      {/* <h3>Price is : {price}</h3> */}
+                      <p>{description.slice(0,100)}</p>
+                      <h3>Price is :{price}</h3>
                     </Card.Text>
                     <Button onClick={details}>See details</Button>
                 </Card.Body>

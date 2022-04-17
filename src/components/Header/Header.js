@@ -15,11 +15,12 @@ const Header = () => {
         <div>
                <Navbar collapseOnSelect fixed='top' expand="lg" bg="dark" variant="dark">
                     <Container>
-                          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                          <Navbar.Brand href="#home">Stronger</Navbar.Brand>
                           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                           <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="ms-auto">
                                 <Customlink className='link' to='/'>Home</Customlink>
+                                <Customlink className='link' to='/BLog'>Blog</Customlink>
                                 {
                                     user ? <Button onClick={out}>Signout</Button> : <Customlink className='link' to='/login'>Login</Customlink>
                                 }

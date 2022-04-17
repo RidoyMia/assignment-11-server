@@ -4,6 +4,8 @@ import { useAuthState, useCreateUserWithEmailAndPassword, useSendEmailVerificati
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Signin from '../Login/Signin/Signin';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Signup = () => {
     const[email,setEmail] = useState('');
@@ -20,10 +22,6 @@ const Signup = () => {
       let navigate = useNavigate();
       let location = useLocation();
       let from = location.state?.from?.pathname || "/";
-    
-      const [sendEmailVerification, sending, error1] = useSendEmailVerification(
-        auth
-      );
    
      
      if(user){
@@ -44,17 +42,17 @@ const Signup = () => {
           if(password !==confirm){
               return setError('password dont match')
           }
-          createUserWithEmailAndPassword(email,password);
+          createUserWithEmailAndPassword(email,password,{sendEmailVerification :true});
+          toast("sent done");
       }
-      if (sending) {
-        return <p>Sending...</p>;
-      }
+      
       
     return (
         <div>
                <Row className='login-container'>
                <Col md="3"></Col>
                <Col md="6" className='form-container'>
+                   <h2 className='text-center text-primary py-3'>Please Register !</h2>
                <Form onSubmit={submit} className='form'>
                     <Form.Group className="mb-3" controlId="formBasicEmail" >
                         <Form.Label>Email address</Form.Label>
@@ -78,26 +76,26 @@ const Signup = () => {
                         error? error.message : ''
                     }</p>
                    <p> If you have an account please <Link  to='/login' className=' py-3'>Login</Link></p>
-                   <button className='mb-2' onClick={
-                       async () => {
-                        await sendEmailVerification();
-                        alert('Sent email');
-                      }
-                   }>Varification by email</button><br />
+                 
                     <Button variant="primary" type="submit">
                         Submit
                     </Button>
 
-                
+                    <ToastContainer />
                 </Form>
                 <div className='Login-section'>
                      <div className='width'></div>
                      <p className='or'>Or</p>
                      <div className='width'></div>
                 </div>
-                <Signin></Signin>
+                <Row>
+                    <Col md="2"></Col>
+                    <Col md="8">
+                        <Signin></Signin>
+                    </Col>
+                </Row>
                </Col>
-
+                
                
            </Row>
            

@@ -3,36 +3,42 @@
       "id": "625bb002f6c72853c122a385",
       "price": "$120",
       "picture": "https://i.postimg.cc/fWpHfR0M/service1-png.jpg",
-      "duration" : "30 days"
+      "duration" : "30 days",
+      "description" : "Our Diploma In Health & Fitness For 16-18 Year Olds Is a Great Way To Start. Apply Now. We Train Students Through World-Class Teaching Facilities & High-Quality Teaching."
     },
     {
       "id": "625bb002ddbafba98ab666c4",
       "price": "$345",
       "picture": "https://i.postimg.cc/3JPmqyKx/service2-png.jpg",
-      "duration" : "50 days"
+      "duration" : "50 days",
+      "description" : " Guaranteed Job Interview. Open 6 Days a Week. No Term Breaks. Weekly Start Dates. Courses: Open All Year, No Term Breaks, Weekly Start Dates, Enrol Anytime"
     },
     {
       "id": "625bb0029ec1fd02b672e510",
       "price": "$453",
       "picture": "https://i.postimg.cc/hjy71vyg/service3-png.jpg",
-      "duration" : "80 days"
+      "duration" : "80 days",
+      "description" : "All fitness abilities and goals catered for in our fully personalised training sessions. Book a Free fitness session and consultation with Prima Fitness, in our Kingston studio."
     },
     {
       "id": "625bb002c3fcf08dd2cadda1",
       "price": "$554",
       "picture": "https://i.postimg.cc/Prc9FMpv/service4-png.jpg",
-      "duration" : "100 days"
+      "duration" : "100 days",
+      "description" : "Train the Trainer Academy Learning Gateway Online - A brand new way to become a Trainer. Online Modules, Quality Engaging Content."
     },
     {
       "id": "625bb002a3213f6018802f1a",
       "price": "$689",
       "picture": "https://i.postimg.cc/pTGq52K5/service5-png.jpg",
-      "duration" : "120 days"
+      "duration" : "120 days",
+      "description" : "Personal Training at BXR London. Our personal training is a cut above the rest, from our quality of team down to our progressive training modalities and methodologies."
     },
     {
       "id": "625bb002d2230186ef181fde",
       "price": "$897",
       "picture": "https://i.postimg.cc/8zR4BdhS/service6-png.jpg",
-      "duration" : "180 days"
+      "duration" : "180 days",
+      "description" : "Blueprint Fitness. Blueprint Fitness offers exclusive personal training gym facilities based in Whetstone N20, and Hadley Wood, Barnet EN4, providing the highest quality Personal Training to clients in Barnet, East Barnet"
     }
   ]

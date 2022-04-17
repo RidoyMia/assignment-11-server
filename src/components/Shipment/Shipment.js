@@ -20,20 +20,23 @@ const Shipment = () => {
     return (
         <div style={{marginTop :'60px'}}>
            <Row>
-          
-                 <Col md="12">
+                
+                <Col md="2"></Col>
+                 <Col md="8">
+                     <h3 className='text-center text-primary py-2'>Checkout </h3>
                     <Card className='card-container'>
                             
                             <Card.Body>
-                            <Card.Img variant="top" src={array[0]?.picture} />
+                            <Card.Img height="400px" variant="top" src={array[0]?.picture} />
                                 <Card.Title>{array[0]?.duration}</Card.Title>
                                 <Card.Text>
+                                    <p>{array[0]?.description}</p>
                                 <h3>Price is : {array[0]?.price}</h3>
                                 </Card.Text>
                                
                             </Card.Body>
                     </Card>
-                </Col>)
+                </Col>
            
             
            </Row>
