@@ -16,8 +16,9 @@ const Shipment = () => {
     const array = [];
     const find = services.find(p => p.id.includes(newcar));
     array.push(find);
-    console.log(array[0]?.id)
+    console.log(array[0]?.id,services)
     return (
+        // single 
         <div style={{marginTop :'60px'}}>
            <Row>
                 
