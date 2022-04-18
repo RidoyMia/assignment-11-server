@@ -9,7 +9,7 @@ import './service.css';
 const Service = (props) => {
     const navigate = useNavigate();
     const details = ()=>{
-        navigate(`/details/${id}`)
+        navigate(`/${id}`)
     }
     const{picture,duration,price,id,description}=props.service;
     return (
