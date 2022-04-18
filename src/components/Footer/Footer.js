@@ -4,6 +4,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
+        // footer section
         <div fixed="bottom" className='banner-footer'>
             <Container>
                 <Row className='py-3'>
