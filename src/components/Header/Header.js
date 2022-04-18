@@ -21,6 +21,7 @@ const Header = () => {
                                 <Nav className="ms-auto">
                                 <Customlink className='link' to='/'>Home</Customlink>
                                 <Customlink className='link' to='/BLog'>Blog</Customlink>
+                                <Customlink className='link' to='/aboutme'>Aout me</Customlink>
                                 {
                                     user ? <Button onClick={out}>Signout</Button> : <Customlink className='link' to='/login'>Login</Customlink>
                                 }

@@ -5,6 +5,8 @@ import './Login.css';
 import auth from '../../firebase.init';
 import { useAuthState, useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import Signin from './Signin/Signin';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const[email,setEmail] = useState('');
@@ -65,7 +67,7 @@ const Login = () => {
                    <button className='mb-2'
                     onClick={async () => {
                         await sendPasswordResetEmail(email);
-                        alert('Sent email');
+                        toast("sent new password in your email");
                       }}
                    
                    >reset password</button><br />
@@ -73,7 +75,7 @@ const Login = () => {
                         Submit
                     </Button>
 
-                
+                    <ToastContainer />
                 </Form>
                 <div className='Login-section'>
                      <div className='width'></div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Aboutme from './components/Aboutme/Aboutme';
 import BLog from './components/Blog/BLog/BLog';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -20,6 +21,7 @@ const App = () => {
          <Route path='/login' element={<Login></Login>}></Route>
          <Route path='/signup' element={<Signup></Signup>}></Route>
          <Route path='/BLog' element={<BLog></BLog>}></Route>
+         <Route path='/aboutme' element={<Aboutme></Aboutme>}></Route>
          <Route path='/details/:shipment' element={
            <Required>
               <Shipment></Shipment>
