@@ -14,6 +14,9 @@ const Required = ({ children }) => {
     // than dropping them off on the home page.
     return <Navigate to="/login" state={{ from: location }} replace />;
   }
+  if(!user.emailVerified){
+    return  alert('please verify')
+  }
 
     return children;
 };
